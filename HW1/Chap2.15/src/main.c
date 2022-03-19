@@ -1,8 +1,9 @@
 /*
  *  Chap2.15/src/main.c
  *
- *  108590050
  *  Programming Problem Chap. 2.15
+ *  
+ *  108590050 李浩銘
  * 
  */  
 
@@ -14,7 +15,7 @@
 #include <unistd.h>
 
 #ifndef BUF_SIZE
-#define BUF_SIZE     64
+#define BUF_SIZE 64
 #endif
 
 void usage(char *programName)
@@ -38,7 +39,7 @@ void fcopy(char *f1, char *f2)
     if ((outFd = open(f2, O_EXCL | O_CREAT | O_WRONLY, S_IRWXU | S_IRWXG | S_IRWXO)) == -1) // If file exists
     {   
         // Abort
-        perror("Error");
+        perror("Error creating destination file");
         close(inFd);
         exit(EXIT_FAILURE);
     }
@@ -61,7 +62,7 @@ void fcopy(char *f1, char *f2)
     close(inFd);    // Close input file
     close(outFd);   // Close output file
 
-    printf("Copy complete!");   // Write completion message to screen
+    printf("Copy complete!\n");   // Write completion message to screen
 }
 
 int main(int argc, char *argv[])
