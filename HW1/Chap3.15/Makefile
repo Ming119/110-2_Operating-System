@@ -13,7 +13,7 @@ all: dirs clean $(BIN_DIR)/main
 $(BIN_DIR)/main: $(OBJ_FILES)
 	$(CC) $(CCFLAGS) -o $@ $^ $(LIBS)
 
-$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
+$(OBJ_DIR)/%.o: $(SRC_FILES)
 	$(CC) $(CCFLAGS) -c -o $@ $< $(LIBS)
 
 dirs:

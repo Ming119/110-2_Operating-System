@@ -24,17 +24,17 @@
 What are the two models of *interprocess communication*? What are the strengths and weakness of the two approaches?
 > Shared-memory model and Message-passing model.  
 
-> Strength of `shared-memory`
-> > The shared-memory communication is faster than the message-passing communication.
+> Strength of `shared-memory`:
+> The shared-memory communication is faster than the message-passing communication.
 
-> Weakness of `shared-memory`
-> > The shared-memory communication have to prevent two or more processes writing to the same location simultaneously.
+> Weakness of `shared-memory`:
+> The shared-memory communication have to prevent two or more processes writing to the same location simultaneously.
 
-> Strength of `message-passing`
-> > The message-passing communication is easier to implement than the shared-memory communication.
+> Strength of `message-passing`:
+> The message-passing communication is easier to implement than the shared-memory communication.
 
-> Weakness of `message-passing`
-> > The message-passing communication have to setup connection, therefore it is slower than shared-memory communication.
+> Weakness of `message-passing`:
+> The message-passing communication have to setup connection, therefore it is slower than shared-memory communication.
 
 2.10: 
 What is the main advantage of the *microkernel* approach to system design? How do user programs and system services interact in a microkernel architecture? What are the disadvantages of using the microkernel approach?
@@ -74,9 +74,10 @@ What are the benefits and the disadvantages of each of the following? Consider b
 
 [Chap 3.14](./Chap3.14/README.md)
 
+[Chap 3.15](./Chap3.15/README.md)
 
 #### Programming projects
 
-[Chap.2]()
+[Chap.2](./Chap2Project/)
 
 [Chap.3]()

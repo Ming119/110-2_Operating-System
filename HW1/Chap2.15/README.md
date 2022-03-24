@@ -85,7 +85,6 @@ if ((inFd = open(f1, O_RDONLY)) == -1)  // If file doesn't exist
 
 Destination file already exist
 ```c
-// Create output file
 int outFd;
 if ((outFd = open(f2, O_EXCL | O_CREAT | O_WRONLY, S_IRWXU | S_IRWXG | S_IRWXO)) == -1) // If file exists
 {   
