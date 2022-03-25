@@ -78,6 +78,6 @@ What are the benefits and the disadvantages of each of the following? Consider b
 
 #### Programming projects
 
-[Chap.2](./Chap2Project/)
+[Chap.2 Project](./Chap2Project/README.md)
 
-[Chap.3]()
+[Chap.3 Project 1](./Chap3Project1/README.md)

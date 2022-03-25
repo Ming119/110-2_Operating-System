@@ -9,5 +9,11 @@ all:
 clean:
 	make -C $(KERNEL_DIR) M=$(PWD) clean
 
+install:
+	sudo insmod $(MODULE_NAME).ko
+
+uninstall:
+	sudo rmmod $(MODULE_NAME).ko
+
 .PHONY:
-	clean
+	clean install uninstall
