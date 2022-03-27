@@ -48,5 +48,7 @@ $ make uninstall
 
 ### Execution snapshot
 #### Part 1
+![img](./doc/Part1.png)
 
 #### Part 2
+![img](./doc/Part2.png)
