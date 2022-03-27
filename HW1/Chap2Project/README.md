@@ -7,9 +7,9 @@
 #### Chap.2 Project Linux Kernel Modules
 
 #### Team Member
-- 108590002 
-- 108590029 
-- 108590049 
+- 108590002 謝宗麟
+- 108590029 朱欣雨
+- 108590049 符芷琪
 - 108590050 李浩銘
 
 Part I: Creating, loading, and removing kernel modules

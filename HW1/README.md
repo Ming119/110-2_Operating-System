@@ -76,6 +76,8 @@ What are the benefits and the disadvantages of each of the following? Consider b
 
 [Chap 3.15](./Chap3.15/README.md)
 
+[Chap 3.20](./Chap3.20/README.md)
+
 #### Programming projects
 
 [Chap.2 Project](./Chap2Project/README.md)

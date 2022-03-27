@@ -116,8 +116,6 @@ int main(int argc, char *argv[])
         // Close the read end of the pipe
         close(fd[WRITE_END]);
     }
-
-    printf("Copy complete!");   // Write completion message to screen
-
+    
     exit(EXIT_SUCCESS); // Terminate normally
 }

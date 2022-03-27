@@ -7,9 +7,9 @@
 #### Chap.3 Project 1 UNIX Shell and History Feature
 
 #### Team Member
-- 108590002 
-- 108590029 
-- 108590049 
+- 108590002 謝宗麟
+- 108590029 朱欣雨
+- 108590049 符芷琪
 - 108590050 李浩銘
 
 ### Development Environment
@@ -29,14 +29,9 @@ $ make clean
 ```
 
 ### Usage
-To install the kernel modeule
 ```bash
-$ make install
-```
-
-To uninstall the kernel modeule
-```bash
-$ make uninstall
+$ ./bin/main
 ```
 
 ### Execution snapshot
+![img](./doc/execute.png)

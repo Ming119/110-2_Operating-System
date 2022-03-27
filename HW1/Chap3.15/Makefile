@@ -20,7 +20,7 @@ dirs:
 	mkdir -p $(OBJ_DIR) $(BIN_DIR)
 
 clean:
-	rm -rf $(OBJ_FILES) $(BIN_FILES)
+	rm -rf $(OBJ_DIR)/* $(BIN_DIR)/*
 
 .PHONY:
 	dirs clean

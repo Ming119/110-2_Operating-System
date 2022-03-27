@@ -3,6 +3,10 @@
  *  
  *  Programming Project Chap.2 Part I
  * 
+ *  108590002 謝宗麟
+ *  108590029 朱欣雨
+ *  108590049 符芷琪
+ *  108590050 李浩銘
  */
 
 #include <linux/init.h>
@@ -26,4 +30,3 @@ module_exit(hello_exit);
 
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("Simple Module");
-MODULE_AUTHOR("108590050");

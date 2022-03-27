@@ -4,6 +4,10 @@
  *  Programming Project Chap.3 Project 1
  *  UNIX Shell and History Feature
  * 
+ *  108590002 謝宗麟
+ *  108590029 朱欣雨
+ *  108590049 符芷琪
+ *  108590050 李浩銘
  */
 
 #include <sys/types.h>
@@ -99,6 +103,7 @@ void history(int n, char *command)
         char **args = splitString(tmp, " ");
         execute(args, h->command);
         free(tmp);
+        free(args);
     }
 }
 
@@ -144,6 +149,13 @@ int main(void)
     char command[BUF_SIZE];
     char **args;
 
+    /**
+    * After reading user input, the steps are:
+    * (1) fork a child process using fork()
+    * (2) the child process will invoke execvp()
+    * (3) if command included &, parent will invoke wait()
+    */
+
     while (1)
     {
         flag = 0;
@@ -185,14 +197,6 @@ int main(void)
         }
 
         free(args);
-
-
-        /**
-        * After reading user input, the steps are:
-        * (1) fork a child process using fork()
-        * (2) the child process will invoke execvp()
-        * (3) if command included &, parent will invoke wait()
-        */
     }
 
     exit(EXIT_SUCCESS);
