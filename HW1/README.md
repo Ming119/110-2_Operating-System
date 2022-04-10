@@ -69,17 +69,11 @@ What are the benefits and the disadvantages of each of the following? Consider b
 ### Programming exercises
 
 #### Programming problems
-
-[Chap 2.15](./Chap2.15/README.md)
-
-[Chap 3.14](./Chap3.14/README.md)
-
-[Chap 3.15](./Chap3.15/README.md)
-
-[Chap 3.20](./Chap3.20/README.md)
+- [Chap 2.15](./Chap2.15/README.md)
+- [Chap 3.14](./Chap3.14/README.md)
+- [Chap 3.15](./Chap3.15/README.md)
+- [Chap 3.20](./Chap3.20/README.md)
 
 #### Programming projects
-
-[Chap.2 Project](./Chap2Project/README.md)
-
-[Chap.3 Project 1](./Chap3Project1/README.md)
+- [Chap.2 Project](./Chap2Project/README.md)
+- [Chap.3 Project 1](./Chap3Project1/README.md)

@@ -55,10 +55,8 @@ int main(int argc, char *argv[])
 
     } else
     {   
-        char *tmp;
         printf("Input a positive integer: ");
-        scanf("%s", tmp);
-        num = atoi(tmp);
+        scanf("%d", &num);
     }
     
     if (num < 1)
