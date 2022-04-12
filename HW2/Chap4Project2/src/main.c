@@ -22,7 +22,7 @@ typedef struct {
     int left;
     int mid;
     int right;
-} Params;
+} params_t;
 
 pthread_mutex_t mutex;
 
@@ -42,7 +42,7 @@ void printArray(int arr[]) {
 
 void* merge(void* args)
 {
-    Params *params = args;
+    params_t *params = args;
 
     // Create leftArr ← arr[left...mid] and rightArr ← arr[mid+1...right]
     int leftSize = params->mid - params->left + 1;
@@ -83,16 +83,16 @@ void* merge(void* args)
 
 void* mergeSort(void* args)
 {
-    Params *params = args;
+    params_t *params = args;
 
     if (params->left < params->right)
     {   
         // mid = (left+right)/2 (Avoiding overflow by right-1)
         int mid = (params->left + (params->right - 1)) / 2;
 
-        Params leftParams = {params->left, 0, mid};                 // left...mid       (mid is useless, so we put 0)
-        Params rightParams = {mid+1, 0, params->right};             // mid+1...right    (mid is useless, so we pu 0)
-        Params mergeParams = {params->left, mid, params->right};    // left...mid...right
+        params_t leftParams = {params->left, 0, mid};                 // left...mid       (mid is useless, so we put 0)
+        params_t rightParams = {mid+1, 0, params->right};             // mid+1...right    (mid is useless, so we pu 0)
+        params_t mergeParams = {params->left, mid, params->right};    // left...mid...right
 
         pthread_t tLeft, tRight, tMerge;
         pthread_create(&tLeft, NULL, mergeSort, &leftParams);   // Create a child thread for left sub-array
@@ -131,13 +131,14 @@ int main(int argc, char* argv[])
     printArray(arr);
 
     pthread_t tid;
-    Params params = {0, BUF_SIZE/2-1, BUF_SIZE-1};
+    params_t params = {0, BUF_SIZE/2-1, BUF_SIZE-1};
 
     // Create a child thread for sorting algorithm
     // Here, we use merge sort
     pthread_create(&tid, NULL, mergeSort, &params);  
     pthread_join(tid, NULL);    // Wait for the child thread finish
-
+    pthread_mutex_destroy(&mutex);
+    
     // Print out the sorted array
     printf("\nArray after sort: \n");
     printArray(arr);
