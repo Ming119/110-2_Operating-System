@@ -135,6 +135,7 @@ int main(int argc, char* argv[])
 
     // Create a child thread for sorting algorithm
     // Here, we use merge sort
+    pthread_mutex_init(&mutex, 0);
     pthread_create(&tid, NULL, mergeSort, &params);  
     pthread_join(tid, NULL);    // Wait for the child thread finish
     pthread_mutex_destroy(&mutex);

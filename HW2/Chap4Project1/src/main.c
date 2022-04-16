@@ -37,7 +37,7 @@ int sudoku[9][9];
 
 void usage(char *programName)
 {
-    printf("Usage:\n\t%s\n", programName);
+    printf("Usage:\n\t%s\n\t%s random\n\t%s custom", programName, programName, programName);
 }
 
 void printSudoku(int sudoku[9][9]) {

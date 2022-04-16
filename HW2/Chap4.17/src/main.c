@@ -72,6 +72,8 @@ int main(int argc, char* argv[])
     srand(time(NULL));  // For rand()
 
     pthread_t tid;
+    
+    pthread_mutex_init(&mutex, 0);
     pthread_create(&tid, NULL, child, NULL);    // Create child thread
     pthread_join(tid, NULL);                    // Wait for child thread finish
     pthread_mutex_destroy(&mutex);
