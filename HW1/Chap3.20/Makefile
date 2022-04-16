@@ -12,7 +12,7 @@ all: dirs clean $(BIN_DIR)/filecopy
 $(BIN_DIR)/filecopy: $(OBJ_FILES)
 	$(CC) $(CCFLAGS) -o $@ $^
 
-$(OBJ_DIR)/%.o: $(SRC_FILES)
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	$(CC) $(CCFLAGS) -c -o $@ $<
 
 dirs:
