@@ -45,6 +45,11 @@ Using the solution provide by the text-book
 ./bin/main
 ```
 
+```bash
+./bin/main -h
+./bin/main --help
+```
+
 Random generate number
 
 ```bash
@@ -59,4 +64,5 @@ Manually input data
 
 ### Execution snapshot
 
-![img](./doc/execute.png)
+![img](./doc/correct.png)
+![img](./doc/incorrect.png)
