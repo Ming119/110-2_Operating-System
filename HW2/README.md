@@ -191,6 +191,5 @@ Describe what changes would be necessary so that a process waiting to acquire a 
 
 - [Chap.4 Project 1](./Chap4Project1/README.md)
 - [Chap.4 Project 2](./Chap4Project2/README.md)
-- [Chap.6 Project 1](./Chap6Project1/README.md)
 - [Chap.6 Project 2](./Chap6Project2/README.md)
 - [Chap.6 Project 3](./Chap6Project3/README.md)
