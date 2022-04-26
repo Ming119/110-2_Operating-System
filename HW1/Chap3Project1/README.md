@@ -18,7 +18,7 @@ Part II - Creating a history feature
 
 #### Team Member
 
-- 108590002 謝宗麟
+- 108590004 謝宗麟
 - 108590029 朱欣雨
 - 108590049 符芷琪
 - 108590050 李浩銘
