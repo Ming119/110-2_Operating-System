@@ -6,10 +6,17 @@
 
 #### Programming problem 8.25
 
-Implement your solution to Exercise 7.15 using POSIX synchronization (or Java if you want).
+Assume that a system has a 32-bit virtual address with a 4-KB page size. Write a program that is passed a virtual address (in decimal) on the command line and have it output the page number and offset for the given address.
 
-- In particular, represent northbound and southbound farmers as separate threads. Once a farmer is on the bridge, the associated thread will sleep for a random period of time, representing traveling across the bridge.
-- Design your program so that you can create several threads representing the northbound and southbound farmers.
+As an example, your program would run as follows:
+> ./a.out 19986
+
+Your program would output:
+> The address 19986 contains:
+> page number = 4
+> offset = 3602
+
+Writing this program will require using the appropriate data type to store 32 bits. We encourage you to use unsigned data types as well.
 
 ### Development Environment
 
