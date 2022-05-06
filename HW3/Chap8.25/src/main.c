@@ -26,9 +26,9 @@ int main(int argc, char* argv[]) {
         exit(EXIT_SUCCESS);
     }
 
-    unsigned int address = atoi(argv[1]);
-    unsigned int pageNum = floor(address / PAGE_SIZE);
-    unsigned int offset  = address - (pageNum * PAGE_SIZE);
+    unsigned address = atoi(argv[1]);
+    unsigned pageNum = floor(address / PAGE_SIZE);
+    unsigned offset  = address - (pageNum * PAGE_SIZE);
 
     printf("The address %u contains:\npage number = %u\noffset = %u\n",address, pageNum, offset);
 
