@@ -40,8 +40,6 @@ make clean
 
 ### Usage
 
-Basic usage
-
 ```bash
 ./bin/main <address>
 ```
