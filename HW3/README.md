@@ -310,4 +310,3 @@ Assume demand paging with three frames, how many page faults would occur for the
 #### Programming projects
 
 - [Chap.7 Project](./Chap7Project/README.md)
-- [Chap.9 Project](./Chap9Project/README.md)

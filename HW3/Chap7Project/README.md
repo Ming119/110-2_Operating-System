@@ -39,3 +39,11 @@ make clean
 ```
 
 ### Usage
+
+```bash
+./bin/main <resources...>
+```
+
+### Execution snapshot
+
+![img](./doc/execution.png)
