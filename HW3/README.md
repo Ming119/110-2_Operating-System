@@ -284,7 +284,7 @@ Assume demand paging with three frames, how many page faults would occur for the
 > (ii) When are counters increased?  
 > A new page is associated with that frame.
 
-> (iii) When are counters decreased?
+> (iii) When are counters decreased?  
 > One of the pages associated with that frame is no longer needed
 
 > (iv) How is the page to be replaced selected?
