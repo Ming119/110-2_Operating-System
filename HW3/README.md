@@ -284,7 +284,7 @@ Assume demand paging with three frames, how many page faults would occur for the
 > (ii) When are counters increased?  
 > A new page is associated with that frame.
 
-> (iii) When are counters decreased?  
+> (iii) When are counters decreased?
 > One of the pages associated with that frame is no longer needed
 
 > (iv) How is the page to be replaced selected?
@@ -298,6 +298,11 @@ Assume demand paging with three frames, how many page faults would occur for the
 
 (c) What is the minimum number of page faults for an optimal page-replacement strategy for the reference string in part(b) with four page frames?
 > 11 page faults.
+
+9.19: What is the cause of thrashing? How does the system detect thrashing? Once it detects thrashing, what can the system do to eliminate this problem?
+> Thrashing is caused by under allocation of the minimum number of pages required by a process, forcing it to continuously page fault.  
+> The system can detect thrashing by evaluating the level of CPU utilization as compared to the level of multiprogramming.  
+> It can be eliminated by reducing the level of multiprogramming.
 
 ### Programming exercises
 
