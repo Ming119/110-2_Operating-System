@@ -239,14 +239,14 @@ Assume demand paging with three frames, how many page faults would occur for the
 > > 6, 7, 1 (faults += 1)  
 > > 7, 1, 0 (faults += 1)  
 > > 1, 0, 5 (faults += 1)  
-> > 1, 0, 5 (faults += 1)  
+> > 1, 0, 5  
 > > 0, 5, 4 (faults += 1)  
 > > 5, 4, 6 (faults += 1)  
 > > 4, 6, 2 (faults += 1)  
 > > 6, 2, 3 (faults += 1)  
 > > 2, 3, 0 (faults += 1)  
 > > 3, 0, 1 (faults += 1)  
-> Total faults: 18
+> Total faults: 17
 
 (c) Optimal replacement
 > Frames:
